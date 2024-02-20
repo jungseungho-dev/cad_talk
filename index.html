@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./output.css" rel="stylesheet">
+  <title>cad talk</title>
+</head>
+
+<body class="h-screen">
+    <div id="nav" class="w-full h-[170px]">
+    
+    </div>
+  <p class="text-slate-400 mt-3 ml-3"> 👇 아래쪽에서 이름으로 로그인</p>
+  <h1 class="text-center text-3xl font-bold text-slate-500">
+    기본설계계획
+  </h1>
+  <!-- 오목게임 -->
+  <div id="gameBox" class="ml-4 p-2 outline-white outline outline-1 inline-block w-[200px] h-[250px]">
+    <div class="text-white text-center">vs</div>
+    <div id="in" class="my-1 rounded-sm outline-white outline outline-1 text-center bg-slate-50 opacity-30 cursor-pointer hover:bg-inherit hover:text-white">참가하기</div>
+    <div id="board">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+    </div>
+  </div>
+  
+  
+  <div id="main" class="fixed inset-x-0 bottom-0 w-[900px] h-[200px] bg-[#2e3440] m-5 pt-1 px-5 overflow-y-auto opacity-40">
+    <div class="text-red-50 pb-10">
+      <ul>
+      </ul>
+    </div>
+  </div>
+  <div id = "login" class="bg-[#2e3440] p-3 shadow-md fixed bottom-0 left-0 w-full flex">
+    <form>
+      <input type="text" required placeholder="Type a name" class="text-white bg-transparent">
+      <button class="rounded-sm px-3 bg-slate-500 hover:bg-slate-600">로그인</button>
+    </form>
+  </div>
+  <div id = "msg" class="bg-[#2e3440] p-4 shadow-md fixed bottom-0 left-0 w-full flex">
+    <form>
+      <input type="text" placeholder="Type a command" class="text-white bg-transparent">
+      <button class="text-slate-600 rounded-sm px-3 bg-slate-500 hover:bg-slate-600">전송</button>
+      <div id="size" class="text-slate-600 rounded-sm px-1 bg-slate-500 inline-block cursor-pointer hover:bg-slate-600">최소화</div>
+      <div id="bg" class="div-to-hide text-slate-600 rounded-sm px-1 bg-slate-500 inline-block cursor-pointer hover:bg-slate-600">배경</div>
+      <div id="game" class="div-to-hide text-slate-600 rounded-sm px-1 bg-slate-500 inline-block cursor-pointer hover:bg-slate-600 ">오목</div>
+      <div id="exit" class="div-to-hide text-slate-600 rounded-sm px-1 bg-slate-500 inline-block cursor-pointer hover:bg-amber-800">비상탈출</div>
+    </form>
+  </div>
+
+  <script type="module" src="/socket.io/socket.io.js"></script>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
+
+<style>
+    @media (max-width: 768px) {
+    .div-to-hide {
+        display: none;
+    }
+    }
+  #nav {
+    background-image: url('./nav.JPG');
+    background-size: cover;
+    background-position: left;
+  }
+  body {
+    background-image: url('./bgA.JPG');
+    background-size: cover;
+    background-position: center;
+  }
+  html {
+    cursor: url("cur3.png") 42 42, url("cur.png") 42 42, auto;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none
+  }
+  #board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 1px;
+  }
+  .cell {
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255,255,255,0.4);
+    margin: 1px;
+  }
+</style>
